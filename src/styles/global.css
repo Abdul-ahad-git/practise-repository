@@ -1,0 +1,134 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Boldonse&family=Comfortaa:wght@300..700&family=Special+Gothic+Expanded+One&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Boldonse&family=Comfortaa:wght@300..700&family=Special+Gothic+Expanded+One&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import "tailwindcss";
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+* {
+    box-sizing: border-box;
+    font-family: "Special Gothic Expanded One", sans-serif;
+    scroll-behavior: smooth;
+
+}
+
+.gradient-sphere {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 0, 234, 0.739);
+    filter: blur(100px);
+}
+
+.gradient-sphere-2 {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    position: absolute;
+    top: 40%;
+    right: 0;
+    background-color: rgba(128, 0, 255, 0.644);
+    filter: blur(100px);
+}
+
+
+.no-scroll-bar::-webkit-scrollbar {
+    display: none;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.big-sphere {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 20;
+    left: 20;
+    border-radius: 50%;
+    background-color: rgb(64, 0, 202);
+    filter: blur(150px);
+}
+
+.big-sphere-2 {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-radius: 50%;
+    background-color: rgb(68, 0, 214);
+    filter: blur(150px);
+}
+
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 0.8s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+.zoom-in {
+    transform: translateY(0px);
+    animation: zoomIn 1s ease-in-out forwards;
+}
+
+@keyframes zoomIn {
+    0% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+
+}
+
+
+/* Custom Scrollbar */
+.custom-scroll-bar::-webkit-scrollbar {
+    width: 10px;
+    /* Width of the scrollbar */
+    z-index: 100;
+    height: 40px;
+}
+
+.custom-scroll-bar::-webkit-scrollbar-track {
+    background: #f0f0f05e;
+    /* Background of the track */
+    /* border-radius: 10px; */
+}
+
+.custom-scroll-bar::-webkit-scrollbar-thumb {
+    background: linear-gradient(to bottom, #a42dff, #3a41ff);
+    /* Gradient thumb */
+    /* border-radius: 10px; */
+    /* border: 3px solid #f0f0f0;  */
+}
+
+.custom-scroll-bar::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(to bottom, #8e00fa, #0008ff);
+    /* Reverse gradient on hover */
+}
