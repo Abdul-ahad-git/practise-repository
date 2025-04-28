@@ -9,7 +9,7 @@ export default function Head({ }) {
     return (
         <div className="fade-in w-full py-2 mb-10 sticky top-0 bg-transparent backdrop-blur z-[100]">
 
-            <h1 className="zoom-in bg-gradient-to-r from-blue-600 to-pink-600 bg-clip-text text-transparent font-display mt-12 text-center font-semibold text-4xl">Custom components</h1>
+            <h1 className="zoom-in bg-gradient-to-r from-blue-600 to-pink-600 bg-clip-text text-transparent font-display mt-12 text-center font-semibold text-4xl">Custom reusable components</h1>
 
             <div className="w-full flex-col mt-4 flex items-center justify-center">
                 <div className="zoom-in  p-[1px] pt-[2px] pb-[2px] rounded-lg bg-gradient-to-r from-blue-700 to-pink-700">
