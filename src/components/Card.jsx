@@ -61,7 +61,7 @@ export default function Card({ title = "No title", description = 'No desription 
                     {title}
                 </div>
 
-                <div className="h-[200px] mt-3 overflow-hidden truncate no-scroll-bar text-wrap text-xs font-light leading-normal text-purple-300/60">
+                <div className="h-[200px]  overflow-hidden truncate no-scroll-bar text-wrap text-xs font-light leading-normal text-purple-300/60">
                     {description}
                 </div>
 
